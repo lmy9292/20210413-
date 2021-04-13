@@ -19,10 +19,26 @@ public class PeopleMain {
 		p.age=10;
 		System.out.println(p.name);
 		System.out.println(p.age);
+		System.out.println(p.nation);
+		p.nation="미국";
+		System.out.println(p.nation);
 		
 		People p1= new People();
 		p1.name="이름2";
 		System.out.println(p1.name);
+		
+		
+		//매개변수가 있는 생성자를 이용한 객체(인스턴스)생성
+		People p3=new People("이름4", 30);
+		System.out.println(p3.name);
+		System.out.println(p3.age);
+		System.out.println(p3.nation);
+		p3.nation="캐나다";
+		System.out.println(p3.nation);
+		p3.name="이름4변경";
+		p3.age=100;
+		System.out.println(p3.name);
+		System.out.println(p3.age);
 	}
 
 }
